@@ -50,7 +50,7 @@ func main() {
 	http.HandleFunc("/api/submit-details", submitDetailsHandler)
 
 	// Start the server
-	fmt.Println("Server is running on http://localhost:8080")
+	fmt.Println("Server is running on port 8080")
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
 
